@@ -13,7 +13,7 @@ st.set_page_config(
 # ------------------ LOAD DATA ------------------
 @st.cache_data
 def load_data():
-    df = pd.read_csv("Pokemon_Champions_Clustered.csv")
+    df = pd.read_pickle("Pokemon_Champions_Clustered.pkl")
     return df
 
 df = load_data()
